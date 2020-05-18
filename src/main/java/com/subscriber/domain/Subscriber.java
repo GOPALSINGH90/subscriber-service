@@ -17,8 +17,8 @@ public class Subscriber {
 	@Column("email")
 	private String email;
 
-	@Column("publisherId")
-	private UUID publisherId;
+	@Column("author_id")
+	private UUID author_Id;
 
 	public UUID getId() {
 		return id;
@@ -40,17 +40,21 @@ public class Subscriber {
 		this.email = email;
 	}
 
-	public UUID getPublisherId() {
-		return publisherId;
+	public UUID getAuthor_Id() {
+		return author_Id;
 	}
 
-	public void setPublisherId(UUID publisherId) {
-		this.publisherId = publisherId;
+	public void setAuthor_Id(UUID author_Id) {
+		this.author_Id = author_Id;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
 	}
 
 	@Override
 	public String toString() {
-		return "Subscriber [id=" + id + ", name=" + name + ", email=" + email + ", publisherId=" + publisherId + "]";
+		return "Subscriber [id=" + id + ", name=" + name + ", email=" + email + ", author_Id=" + author_Id + "]";
 	}
 
 }

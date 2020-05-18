@@ -12,7 +12,8 @@
 	<groupId>com.subscriber</groupId>
 	<artifactId>subscriber-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>subscriber-service</name>
+	<name>publisherservice</name>
+	<packaging>jar</packaging>
 	<description> project for subscriber-service</description>
 
 	<properties>
